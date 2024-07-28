@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+html, body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  margin-left: 6px;
+  padding: 6px 11px;
+  border: none;
+  border-radius: 2.5px;
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button.add-task {
+  background-color: #4caf50;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  text-align: center;
+  background-color: skyblue;
+  padding: 19px;
+  height: 100vh; /* Add this line */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App ul {
+  list-style-type: none;
+}
+
+button.save-task {
+  background-color: #1e90ff;
+  color: white;
+}
+
+button.delete-task {
+  background-color: #ff4500;
+  color: white;
+}
+button.edit-task {
+  background-color: #ffa500;
+  color: white;
 }
